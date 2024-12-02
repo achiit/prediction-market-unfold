@@ -859,7 +859,7 @@ The focus should remain on timely, relevant, and factual events to maintain fair
             className="flex items-center justify-center gap-3 mb-4"
           >
             <Trophy size={40} className="text-[#f51454]" />
-            <h1 className="text-5xl font-bold text-white">Create a Sports Market</h1>
+            <h1 className="text-5xl font-bold text-white">Create a Market</h1>
           </motion.div>
           <p className="text-gray-300 text-xl typewriter-font">
             Create prediction markets for live sports events and earn fees!

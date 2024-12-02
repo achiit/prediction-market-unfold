@@ -50,7 +50,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Sports Prediction World
+          Prediction World
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-gray-200 typewriter-font"
@@ -58,7 +58,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Predict sports outcomes, place your bets, and win big rewards. Be the underdog!
+          Predict outcomes, place your bets, and win big rewards. Be the underdog!
         </motion.p>
         <motion.a
           href="/markets"
