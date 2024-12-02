@@ -391,7 +391,7 @@ function Market({ marketId, marketData }) {
     cancelled,
   } = marketData;
 
-  const formatToCHZ = (weiValue) => `${ethers.utils.formatEther(weiValue)} CHZ`;
+  const formatToCHZ = (weiValue) => `${ethers.utils.formatEther(weiValue)} ETH`;
 
   useEffect(() => {
     const updateTimeLeft = () => {
@@ -472,7 +472,7 @@ function Market({ marketId, marketData }) {
         <div>
           <input
             type="number"
-            placeholder="Enter bet amount (CHZ)"
+            placeholder="Enter bet amount (ETH)"
             value={betAmount}
             onChange={(e) => setBetAmount(e.target.value)}
             className="w-full p-2 mb-4 bg-[#1c2237] border border-[#f51454] rounded text-white typewriter-font focus:outline-none focus:ring-2 focus:ring-[#f51454]"

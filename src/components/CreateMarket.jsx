@@ -775,11 +775,13 @@ export default function CreateMarket() {
             {
               role: 'user',
               content: `
-                Generate 3 yes/no prediction market questions about current live or upcoming sports events.
-                Example format:
-                "Will Manchester United win against Arsenal?"
-                "Will LeBron James score over 30 points tonight?"
-                "Will Max Verstappen secure pole position in today's F1 qualifying?"
+Generate Yes/No prediction market questions based on current affairs or upcoming events across sports, politics, entertainment, and technology. Ensure the questions are tied to real-world events where the outcome will be clear and verifiable. Examples include:
+
+'Will [Team/Player] win [specific game/tournament]?'
+'Will [Political Figure/Party] achieve [specific milestone] in [upcoming event]?'
+'Will [Movie/Show] gross over [$X amount] on its opening weekend?'
+'Will [Tech Company/Innovation] reach [specific achievement] by [date]?'
+The focus should remain on timely, relevant, and factual events to maintain fairness and accuracy in the predictions.
               `,
             },
           ],
@@ -804,6 +806,7 @@ export default function CreateMarket() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log(contract, account)
     if (!contract || !account) {
       alert('Please connect your wallet first')
       return
@@ -986,9 +989,9 @@ export default function CreateMarket() {
                     step="0.1"
                     required
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">CHZ</span>
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">ETH</span>
                 </div>
-                <span className="text-sm text-gray-400 mt-1 block">Minimum 1 CHZ required</span>
+                <span className="text-sm text-gray-400 mt-1 block">Minimum 0.001 ETH required</span>
               </div>
 
               <motion.button

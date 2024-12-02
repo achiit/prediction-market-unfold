@@ -1,7 +1,9 @@
 export const CONTRACT_ADDRESS = "0x0ae6df55a5e43c66198436a7385009dc924680ec"
 export const CHAIN_ID = 84532
 export const RPC_URL = "https://sepolia.base.org"
-
+export const UNICHAIN_CONTRACT_ADDRESS = "0xdc715a58b51ba45c864cff4ddf5fb43baffd17dd"
+export const UNICHAIN_CHAIN_ID = 1301
+export const UNICHAIN_RPC_URL = "https://sepolia.unichain.org"
 export const CONTRACT_ABI = [
     {
         "inputs": [],

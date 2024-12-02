@@ -1,3 +1,36 @@
+import { Routes, Route } from 'react-router-dom';
+import { OktoProvider, BuildType } from 'okto-sdk-react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './Pages/Home';
+import Markets from './Pages/Markets';
+import Create from './Pages/Create';
+import MyMarkets from './Pages/MyMarkets';
+
+const OKTO_CLIENT_API_KEY = "452d2760-c8f3-4cb1-b283-8a49b54907df"; // Replace with your Okto API Key
+
+function App() {
+  return (
+    <OktoProvider apiKey={OKTO_CLIENT_API_KEY} buildType={BuildType.SANDBOX}>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/markets" element={<Markets />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/my-markets" element={<MyMarkets />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </OktoProvider>
+  );
+}
+
+export default App;
+
+
 // import { useWeb3 } from './context/Web3Context'
 // import { formatAddress } from './utils/web3'
 // import CreateMarket from './components/CreateMarket'
@@ -73,29 +106,5 @@
 // }
 
 // export default App;
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './Pages/Home';
-import Markets from './Pages/Markets';
-import Create from './Pages/Create';
-import MyMarkets from './Pages/MyMarkets';
 
-function App() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/markets" element={<Markets />} />
-          <Route path="/create" element={<Create />} />
-            <Route path="/my-markets" element={<MyMarkets />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
-}
 
-export default App;
