@@ -39,6 +39,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, CircleDot, Hexagon, Circle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import first from '../assets/first.png';
+import second from '../assets/second.png';
+import third from '../assets/third.png';
 
 export default function Home() {
   return (
@@ -147,7 +150,7 @@ export default function Home() {
             >
               <div className="h-48 bg-[#1a0b2e] rounded-lg mb-4 overflow-hidden">
                 <img
-                  src="src/assets/first.png"
+                  src={first}
                   alt="Market preview"
                   className="w-full h-full object-cover"
                 />
@@ -168,8 +171,8 @@ export default function Home() {
               className="bg-gradient-to-br from-[#2e0d41] to-[#430e44] p-6 rounded-xl border border-[#f51454]/20"
             >
               <div className="h-48 bg-[#1a0b2e] rounded-lg mb-4 overflow-hidden">
-                <img
-                  src="src/assets/second.png"
+              <img
+                  src={second}
                   alt="Market preview"
                   className="w-full h-full object-cover"
                 />
@@ -190,8 +193,8 @@ export default function Home() {
               className="bg-gradient-to-br from-[#2e0d41] to-[#430e44] p-6 rounded-xl border border-[#f51454]/20"
             >
               <div className="h-48 bg-[#1a0b2e] rounded-lg mb-4 overflow-hidden">
-                <img
-                  src="src/assets/third.png"
+              <img
+                  src={third}
                   alt="Market preview"
                   className="w-full h-full object-cover"
                 />
