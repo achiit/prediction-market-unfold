@@ -115,7 +115,7 @@ export default function Navbar({ setAuthToken, authToken, handleLogout }) {
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <NavLink to="/markets">Sports Markets</NavLink>
+            <NavLink to="/markets">Markets</NavLink>
             <NavLink to="/create">Create Prediction</NavLink>
             <NavLink to="/my-markets">My Predictions</NavLink>
 

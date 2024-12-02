@@ -66,7 +66,7 @@ export default function Hero() {
           whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(245, 20, 84, 0.5)' }}
           transition={{ duration: 0.3 }}
         >
-          Explore Sports Markets
+          Explore Markets
         </motion.a>
 
         <div className="mt-16 relative">
